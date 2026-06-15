@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 222 30% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 30% 11%;
+  --primary: 164 88% 24%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 218 16% 92%;
+  --secondary-foreground: 222 30% 16%;
+  --muted: 216 18% 94%;
+  --muted-foreground: 218 12% 42%;
+  --accent: 39 92% 52%;
+  --accent-foreground: 222 30% 11%;
+  --destructive: 0 72% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 216 14% 86%;
+  --input: 216 14% 86%;
+  --ring: 164 88% 24%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+}
